@@ -39,6 +39,20 @@ a {
   margin: 1em;
   text-align: center;
 }
+.btn {
+  background-color: silver; 
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover{
+  background-color: #0065a4;
+}
 
 .logo {
   background-color: #0065a4;

@@ -120,6 +120,7 @@ router.get('/', checkAuth, async function(req, res, next) {
 	}
 });
 
+
 /**
  * GET a single user.
  * This function may be used by an administrator, or by a user
@@ -157,5 +158,6 @@ router.post('/', checkAuth, async function(req, res, next){
 		throw error;
         }
 });
+
 
 module.exports = { checkAuth, router, User, validPassword };

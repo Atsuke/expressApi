@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	include ./menu.pug
+	form(action='/newEntry' method='post')
+		label(for='Mood'): b Mood:
+		input(type='text' name='Mood')
+		br
+		label(for='note'): b Note:
+		textarea(type='textarea' rows= "10" name='note')
+		br
+		button(type='submit') Submit

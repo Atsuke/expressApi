@@ -2,14 +2,22 @@ extends layout
 
 block content
 	include ./menu.pug
+	form(action='/editEntry' method='get')
 	table.table.table-striped
+	
 		tr
 		th Date
 		th Mood
 		th Entry
-
+		
 		each e in entries
 			tr
-			td= e.date
-			td= e.mood
-			td= e.entry 
+				td= e.date
+				td= e.mood
+				td= e.entry 		
+				td
+					a.btn(href='/editEntry/' + e.id ) Edit 
+				td 
+					a.btn(href='/delete/' + e.id ) Delete
+
+			

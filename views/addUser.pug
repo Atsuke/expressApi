@@ -3,3 +3,11 @@ extends layout
 block content
 	include ./menu.pug
 	h1 Add a New User
+	form(action='/addUser' method='post')
+		label(for='Email'): b Email:   
+		input(type='text' name='Email') 
+		br
+		label(for='password'): b password:
+		input(type='text' name='password' )
+		br
+		button(type='submit') Submit

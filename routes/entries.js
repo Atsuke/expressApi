@@ -59,7 +59,7 @@ const entrySchema = new Schema({
 	},
 	location: {
 		type: pointSchema,
-		required: true
+		required: false
 	},
 	weather: String
 });
